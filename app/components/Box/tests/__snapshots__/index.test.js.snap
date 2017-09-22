@@ -1,0 +1,11 @@
+exports[`container renders a <Box /> 1`] = `
+<div
+  className="sc-bdVaJa NzEUJ" />
+`;
+
+exports[`container renders css 1`] = `
+Object {
+  "backgroundColor": "steelblue",
+  "padding": "1em",
+}
+`;

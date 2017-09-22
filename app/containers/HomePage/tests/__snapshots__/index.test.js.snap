@@ -1,0 +1,50 @@
+exports[`<HomePage /> renders the <HomePage /> 1`] = `
+<styled.div>
+  <styled.div>
+    <FormattedMessage
+      defaultMessage="This is HomePage component!"
+      id="app.components.HomePage.header"
+      tagName="span"
+      values={Object {}} />
+    <styled.div
+      xs="auto">
+      <Button
+        path="docs">
+        Docs
+      </Button>
+    </styled.div>
+    <styled.div
+      xs="auto">
+      <Button
+        external={true}
+        path="https://github.com/will-hitchcock/shoelaces">
+        Github
+      </Button>
+    </styled.div>
+  </styled.div>
+  <styled.div>
+    <styled.div
+      xs={0.3333333333333333}>
+      <styled.div />
+    </styled.div>
+    <styled.div
+      xs={0.3333333333333333}>
+      <styled.div />
+    </styled.div>
+    <styled.div
+      xs={0.3333333333333333}>
+      <styled.div />
+    </styled.div>
+  </styled.div>
+  <styled.div>
+    <styled.div
+      xs={0.5}>
+      <styled.div />
+    </styled.div>
+    <styled.div
+      xs={0.5}>
+      <styled.div />
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
