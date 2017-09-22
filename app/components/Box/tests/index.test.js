@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../index'
 import css from '../css'
 
-describe('container', () => {
+describe('Box', () => {
   it('renders a <Box />', () => {
     expect(shallow(<Button path="some/path" />)).toMatchSnapshot()
   })

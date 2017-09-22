@@ -1,11 +1,16 @@
 exports[`<HomePage /> renders the <HomePage /> 1`] = `
 <styled.div>
   <styled.div>
-    <FormattedMessage
-      defaultMessage="This is HomePage component!"
-      id="app.components.HomePage.header"
-      tagName="span"
-      values={Object {}} />
+    <Header
+      type="h1">
+      <FormattedMessage
+        defaultMessage="{ 👟 } CSS-in-JS flexbox grid"
+        id="app.components.HomePage.header"
+        tagName="span"
+        values={Object {}} />
+    </Header>
+  </styled.div>
+  <styled.div>
     <styled.div
       xs="auto">
       <Button

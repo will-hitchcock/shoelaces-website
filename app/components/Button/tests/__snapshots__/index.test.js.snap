@@ -1,15 +1,15 @@
-exports[`container renders a <StyledLink /> 1`] = `
+exports[`Button renders a <StyledLink /> 1`] = `
 <Styled(Link)
   to="some/path" />
 `;
 
-exports[`container renders an <A /> 1`] = `
+exports[`Button renders an <A /> 1`] = `
 <styled.a
   href="http://www.google.com"
   target="_blank" />
 `;
 
-exports[`container renders css 1`] = `
+exports[`Button renders css 1`] = `
 Object {
   "background": "lightgray",
   "border": "2px solid white",

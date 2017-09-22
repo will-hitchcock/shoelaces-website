@@ -14,6 +14,7 @@ import { FormattedMessage } from 'react-intl'
 import { Container, Row, Col } from 'react-shoelaces'
 import Button from 'components/Button'
 import Box from 'components/Box'
+import Header from 'components/Header'
 import messages from './messages'
 
 export default class HomePage extends PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -21,7 +22,11 @@ export default class HomePage extends PureComponent { // eslint-disable-line rea
     return (
       <Container>
         <Row>
-          <FormattedMessage {...messages.header} />
+          <Header>
+            <FormattedMessage {...messages.header} />
+          </Header>
+        </Row>
+        <Row>
           <Col xs="auto">
             <Button path="docs">Docs</Button>
           </Col>
