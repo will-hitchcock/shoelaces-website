@@ -1,0 +1,31 @@
+exports[`container renders a <H1 /> 1`] = `<styled.h1 />`;
+
+exports[`container renders a <H1 /> 2`] = `<styled.h1 />`;
+
+exports[`container renders a <H2 /> 1`] = `<styled.h2 />`;
+
+exports[`container renders a <H3 /> 1`] = `<styled.h3 />`;
+
+exports[`container renders a <H4 /> 1`] = `<styled.h4 />`;
+
+exports[`container renders a <H5 /> 1`] = `<styled.h5 />`;
+
+exports[`container renders css 1`] = `
+Object {
+  "h1": Object {
+    "textAlign": "center",
+  },
+  "h2": Object {
+    "textAlign": "center",
+  },
+  "h3": Object {
+    "textAlign": "center",
+  },
+  "h4": Object {
+    "textAlign": "center",
+  },
+  "h5": Object {
+    "textAlign": "center",
+  },
+}
+`;
