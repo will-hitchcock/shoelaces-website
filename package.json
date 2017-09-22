@@ -84,6 +84,11 @@
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb",
+    "globals": {
+      "shallow": true,
+      "render": true,
+      "mount": true
+    },
     "env": {
       "browser": true,
       "node": true,
@@ -108,13 +113,10 @@
         "never"
       ],
       "arrow-parens": [
-        "warn",
+        "error",
         "as-needed"
       ],
-      "arrow-body-style": [
-        "warn",
-        "as-needed"
-      ],
+      "arrow-body-style": 2,
       "comma-dangle": [
         "error",
         {
@@ -195,6 +197,12 @@
     ]
   },
   "jest": {
+    "setupFiles": [
+      "./test/setup.js"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
     "collectCoverageFrom": [
       "app/**/*.{js,jsx}",
       "!app/**/*.test.{js,jsx}",
@@ -273,6 +281,7 @@
     "coveralls": "2.11.15",
     "css-loader": "0.26.1",
     "enzyme": "2.6.0",
+    "enzyme-to-json": "^2.0.0",
     "eslint": "3.11.1",
     "eslint-config-airbnb": "13.0.0",
     "eslint-config-airbnb-base": "10.0.1",

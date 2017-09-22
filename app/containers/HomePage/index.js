@@ -11,12 +11,17 @@
 
 import React, { PureComponent } from 'react'
 import { FormattedMessage } from 'react-intl'
+import Button from 'components/Button'
 import messages from './messages'
 
-export default class HomePage extends PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class HomePage extends PureComponent {// eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
+        <Button path="docs">Docs</Button>
+        <Button external path="https://github.com/will-hitchcock/shoelaces">
+          Github
+        </Button>
         <FormattedMessage {...messages.header} />
       </div>
     )
