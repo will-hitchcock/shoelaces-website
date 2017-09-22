@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../index'
 import css from '../css'
 
-describe('container', () => {
+describe('Header', () => {
   it('renders a <H5 />', () => {
     expect(shallow(<Header type="h5" />)).toMatchSnapshot()
   })
