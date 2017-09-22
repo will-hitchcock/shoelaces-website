@@ -1,7 +1,7 @@
 import { injectGlobal } from 'styled-components'
 
 /* eslint no-unused-expressions: 0 */
-injectGlobal`
+export const globalStyles = injectGlobal`
   html,
   body {
     height: 100%;

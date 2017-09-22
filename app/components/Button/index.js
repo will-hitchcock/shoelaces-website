@@ -14,7 +14,7 @@ const A = styled.a`${css};`
 
 const Button = ({ children, external, path }) =>
   external ? (
-    <A href={path}>{children}</A>
+    <A href={path} target="_blank">{children}</A>
   ) : (
     <StyledLink to={path}>{children}</StyledLink>
   )
