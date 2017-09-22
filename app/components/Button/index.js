@@ -4,7 +4,7 @@
 *
 */
 import React from 'react'
-// import PropTypes from 'prop-types'
+import { node, bool, string } from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'react-router'
 import css from './css'
@@ -19,6 +19,10 @@ const Button = ({ children, external, path }) =>
     <StyledLink to={path}>{children}</StyledLink>
   )
 
-Button.propTypes = {}
+Button.propTypes = {
+  children: node,
+  external: bool,
+  path: string.isRequired
+}
 
 export default Button
