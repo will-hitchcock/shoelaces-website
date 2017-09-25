@@ -1,6 +1,8 @@
-export const css = {
+import colors from 'utils/colors'
+
+export const css = ({ color }) => ({
   padding: '1em',
-  backgroundColor: '#FFCBC9'
-}
+  backgroundColor: color || colors.secondary
+})
 
 export default css
