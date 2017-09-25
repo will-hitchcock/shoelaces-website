@@ -14,13 +14,20 @@ const scope = { Container, Row, Col, Box }
 const code =
 `<Container>
     <Row>
-      <Col xs={4 / 12}><Box /></Col>
-      <Col xs={4 / 12}><Box /></Col>
-      <Col xs={4 / 12}><Box /></Col>
+      <Col xs={1 / 5}><Box /></Col>
+      <Col xs={1 / 5}><Box /></Col>
+      <Col xs={1 / 5}><Box /></Col>
+      <Col xs={1 / 5}><Box /></Col>
+      <Col xs={1 / 5}><Box /></Col>
     </Row>
     <Row>
-      <Col xs={6 / 12}><Box /></Col>
-      <Col xs={6 / 12}><Box /></Col>
+      <Col xs={1 / 3}><Box /></Col>
+      <Col xs={1 / 3}><Box /></Col>
+      <Col xs={1 / 3}><Box /></Col>
+    </Row>
+    <Row>
+      <Col xs={1 / 2}><Box /></Col>
+      <Col xs={1 / 2}><Box /></Col>
     </Row>
   </Container>
 `

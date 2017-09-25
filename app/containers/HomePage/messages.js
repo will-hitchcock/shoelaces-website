@@ -8,7 +8,11 @@ import { defineMessages } from 'react-intl'
 export default defineMessages({
   header: {
     id: 'app.components.HomePage.header',
-    defaultMessage: '{ 👟 } CSS-in-JS flexbox grid'
+    defaultMessage: '{ 👟 } Shoelaces'
+  },
+  subHeader: {
+    id: 'app.components.HomePage.header',
+    defaultMessage: 'Mobile first flexible CSS-in-JS grid.'
   },
   docs: {
     id: 'app.components.HomePage.header',

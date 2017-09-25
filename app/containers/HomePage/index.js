@@ -11,7 +11,7 @@
 
 import React, { PureComponent } from 'react'
 import { FormattedMessage } from 'react-intl'
-import { Container, Row } from 'react-shoelaces'
+import { Container, Row, Col } from 'react-shoelaces'
 import Button from 'components/Button'
 import Header from 'components/Header'
 import BasicExample from 'components/BasicExample'
@@ -21,11 +21,14 @@ export default class HomePage extends PureComponent { // eslint-disable-line rea
   render() {
     return (
       <Container>
-        <Row justifyContent="center">
+        <Col justifyContent="center">
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
-        </Row>
+          <Header type="h3">
+            <FormattedMessage {...messages.subHeader} />
+          </Header>
+        </Col>
         <Row justifyContent="center">
           <Button path="docs">
             <FormattedMessage {...messages.docs} />

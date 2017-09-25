@@ -13,18 +13,23 @@ exports[`Header renders a <H5 /> 1`] = `<styled.h5 />`;
 exports[`Header renders css 1`] = `
 Object {
   "h1": Object {
+    "color": "white",
     "textAlign": "center",
   },
   "h2": Object {
+    "color": "white",
     "textAlign": "center",
   },
   "h3": Object {
+    "color": "white",
     "textAlign": "center",
   },
   "h4": Object {
+    "color": "white",
     "textAlign": "center",
   },
   "h5": Object {
+    "color": "white",
     "textAlign": "center",
   },
 }

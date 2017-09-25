@@ -1,6 +1,10 @@
+// import colors from 'utils/colors'
+
 const shared = {
-  textAlign: 'center'
+  textAlign: 'center',
+  color: 'white'
 }
+
 const h1 = { ...shared }
 const h2 = { ...shared }
 const h3 = { ...shared }

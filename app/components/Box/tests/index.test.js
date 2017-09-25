@@ -8,6 +8,6 @@ describe('Box', () => {
   })
 
   it('renders css', () => {
-    expect(css).toMatchSnapshot()
+    expect(css({})).toMatchSnapshot()
   })
 })
