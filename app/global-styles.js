@@ -17,7 +17,8 @@ export const globalStyles = injectGlobal`
   }
 
   #app {
-    background-color: #fafafa;
+    color: white;
+    background: linear-gradient(45deg, rgba(70,130,180,1) 0%, rgba(99,184,255,1) 100%);
     min-height: 100%;
     min-width: 100%;
   }

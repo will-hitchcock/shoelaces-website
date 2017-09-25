@@ -1,0 +1,33 @@
+exports[`<BasicExample /> renders a <BasicExample /> 1`] = `
+<LiveProvider
+  code="<Container>
+    <Row>
+      <Col xs={4 / 12}><Box /></Col>
+      <Col xs={4 / 12}><Box /></Col>
+      <Col xs={4 / 12}><Box /></Col>
+    </Row>
+    <Row>
+      <Col xs={6 / 12}><Box /></Col>
+      <Col xs={6 / 12}><Box /></Col>
+    </Row>
+  </Container>
+"
+  mountStylesheet={true}
+  noInline={false}
+  scope={
+    Object {
+      "Box": [Function],
+      "Col": [Function],
+      "Container": [Function],
+      "Row": [Function],
+    }
+  }>
+  <LivePreview />
+  <styled.div
+    offset={0.16666666666666666}
+    xs={0.6666666666666666}>
+    <LiveEditor />
+    <LiveError />
+  </styled.div>
+</LiveProvider>
+`;

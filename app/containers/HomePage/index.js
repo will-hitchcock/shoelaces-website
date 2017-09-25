@@ -11,40 +11,30 @@
 
 import React, { PureComponent } from 'react'
 import { FormattedMessage } from 'react-intl'
-import { Container, Row, Col } from 'react-shoelaces'
+import { Container, Row } from 'react-shoelaces'
 import Button from 'components/Button'
-import Box from 'components/Box'
 import Header from 'components/Header'
+import BasicExample from 'components/BasicExample'
 import messages from './messages'
 
 export default class HomePage extends PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <Container>
-        <Row>
+        <Row justifyContent="center">
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
         </Row>
-        <Row>
-          <Col xs="auto">
-            <Button path="docs">Docs</Button>
-          </Col>
-          <Col xs="auto">
-            <Button external path="https://github.com/will-hitchcock/shoelaces">
-              Github
-            </Button>
-          </Col>
+        <Row justifyContent="center">
+          <Button path="docs">
+            <FormattedMessage {...messages.docs} />
+          </Button>
+          <Button external path="https://github.com/will-hitchcock/shoelaces">
+            <FormattedMessage {...messages.github} />
+          </Button>
         </Row>
-        <Row>
-          <Col xs={4 / 12}><Box /></Col>
-          <Col xs={4 / 12}><Box /></Col>
-          <Col xs={4 / 12}><Box /></Col>
-        </Row>
-        <Row>
-          <Col xs={6 / 12}><Box /></Col>
-          <Col xs={6 / 12}><Box /></Col>
-        </Row>
+        <BasicExample />
       </Container>
     )
   }

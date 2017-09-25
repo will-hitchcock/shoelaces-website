@@ -9,8 +9,8 @@ import styled from 'styled-components'
 import { Link } from 'react-router'
 import css from './css'
 
-const StyledLink = styled(Link)`${css};`
-const A = styled.a`${css};`
+const StyledLink = styled(Link)`${css}`
+const A = styled.a`${css}`
 
 const Button = ({ children, external, path }) =>
   external ? (
