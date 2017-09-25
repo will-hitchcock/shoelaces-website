@@ -1,6 +1,6 @@
 export const css = {
   padding: '1em',
-  backgroundColor: 'steelblue'
+  backgroundColor: '#FFCBC9'
 }
 
 export default css

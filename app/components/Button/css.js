@@ -6,7 +6,7 @@ export const css = {
   width: '11rem',
   background: 'lightgray',
   color: 'white',
-  border: '2px solid white',
+  // border: '2px solid white',
   textAlign: 'center',
   textDecoration: 'none'
 }
