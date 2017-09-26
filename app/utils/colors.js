@@ -13,7 +13,10 @@ const colors = {
   tertiaryLight: '#AD9D6B',
   tertiaryLighter: '#AD9D6B',
   tertiaryDark: '#AD9D6B',
-  tertiaryDarker: '#AD9D6B'
+  tertiaryDarker: '#AD9D6B',
+  gray: '#CFCFCF',
+  red: '#FF9494',
+  darkRed: '#B51020'
 }
 
 export default colors

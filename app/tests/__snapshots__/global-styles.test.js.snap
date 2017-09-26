@@ -1,7 +1,7 @@
 exports[`globalStyles rendrs global styles 1`] = `
 Object {
   "#app": Object {
-    "background": "linear-gradient(45deg, #8B97A2 0%, #1E364A 100%)",
+    "background": "linear-gradient(45deg, #8B97A2 0%, #CFCFCF 100%)",
     "color": "white",
     "minHeight": "100%",
     "minWidth": "100%",

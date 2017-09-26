@@ -14,7 +14,7 @@ export const globalStyles = {
   },
   '#app': {
     color: 'white',
-    background: `linear-gradient(45deg, ${colors.primaryLighter} 0%, ${colors.primaryDarker} 100%)`,
+    background: `linear-gradient(45deg, ${colors.primaryLighter} 0%, ${colors.gray} 100%)`,
     minHeight: '100%',
     minWidth: '100%'
   }

@@ -14,7 +14,8 @@ import { FormattedMessage } from 'react-intl'
 import { Container, Row, Col } from 'react-shoelaces'
 import Button from 'components/Button'
 import Header from 'components/Header'
-import BasicExample from 'components/BasicExample'
+import CodeExample from 'components/CodeExample'
+import examples from 'components/CodeExample/examples'
 import messages from './messages'
 
 export default class HomePage extends PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -37,7 +38,7 @@ export default class HomePage extends PureComponent { // eslint-disable-line rea
             <FormattedMessage {...messages.github} />
           </Button>
         </Row>
-        <BasicExample />
+        {examples.map(item => <CodeExample key={item.name} scope={item.scope} code={item.code} />)}
       </Container>
     )
   }
