@@ -9,6 +9,7 @@ import { string, object } from 'prop-types'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 import { Row, Col } from 'react-shoelaces'
 import { flex } from 'shoelaces'
+import Header from 'components/Header'
 import { editor, error } from './css'
 
 const StyledEditor = styled(LiveEditor)`
@@ -18,8 +19,9 @@ const StyledError = styled(LiveError)`
   ${error}
 `
 
-const CodeExample = ({ code, scope }) =>
+const CodeExample = ({ code, scope, header }) =>
   <LiveProvider scope={scope} code={code}>
+    <Header type="h2">{header}</Header>
     <LivePreview />
     <Row justifyContent="center">
       <Col xs={1} lg={8 / 12}>

@@ -11,15 +11,15 @@ export default defineMessages({
     defaultMessage: '{ 👟 } Shoelaces'
   },
   subHeader: {
-    id: 'app.components.HomePage.header',
+    id: 'app.components.HomePage.subHeader',
     defaultMessage: 'Mobile first flexible CSS-in-JS grid.'
   },
-  docs: {
-    id: 'app.components.HomePage.header',
-    defaultMessage: 'Docs'
+  shoelaces: {
+    id: 'app.components.HomePage.shoelaces',
+    defaultMessage: 'shoelaces'
   },
-  github: {
-    id: 'app.components.HomePage.header',
-    defaultMessage: 'Github'
+  reactShoelaces: {
+    id: 'app.components.HomePage.reactShoelaces',
+    defaultMessage: 'react-shoelaces'
   }
 })

@@ -1,6 +1,9 @@
 import colors from 'utils/colors'
 
 const editor = {
+  '.fontLoaded &': {
+    fontFamily: '"Roboto Mono", monospace'
+  },
   overflow: 'scroll'
 }
 

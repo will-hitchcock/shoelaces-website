@@ -1,6 +1,7 @@
 import ReactShoelaces from 'react-shoelaces'
 // import { container } from 'shoelaces'
 import Box from 'components/Box'
+import Header from 'components/Header'
 
 const ReactScope = { Box, ...ReactShoelaces }
 
@@ -30,24 +31,30 @@ const examples = [
   },
   {
     name: 'justify',
-    scope: ReactScope,
+    header: 'Justification',
+    scope: { ...ReactScope, Header },
     code: `<Container>
+  <Header type="h3">Default (between)</Header>
   <Row>
     <Col xs={1 / 3}><Box /></Col>
     <Col xs={1 / 3}><Box /></Col>
   </Row>
+  <Header type="h3">Around</Header>
   <Row justifyContent="around">
     <Col xs={1 / 3}><Box /></Col>
     <Col xs={1 / 3}><Box /></Col>
   </Row>
+  <Header type="h3">Center</Header>
   <Row justifyContent="center">
     <Col xs={1 / 3}><Box /></Col>
     <Col xs={1 / 3}><Box /></Col>
   </Row>
+  <Header type="h3">Start</Header>
   <Row justifyContent="start">
     <Col xs={1 / 3}><Box /></Col>
     <Col xs={1 / 3}><Box /></Col>
   </Row>
+  <Header type="h3">End</Header>
   <Row justifyContent="end">
     <Col xs={1 / 3}><Box /></Col>
     <Col xs={1 / 3}><Box /></Col>
@@ -57,6 +64,7 @@ const examples = [
   },
   {
     name: 'nesting',
+    header: 'Nesting',
     scope: ReactScope,
     code: `<Container>
   <Row>
@@ -82,6 +90,7 @@ const examples = [
   },
   {
     name: 'responsive',
+    header: 'Responsive',
     scope: ReactScope,
     code: `<Container>
   <Row>
@@ -100,6 +109,7 @@ const examples = [
   },
   {
     name: 'math',
+    header: 'Fancy pants math',
     scope: ReactScope,
     code: `<Container>
   <Row>

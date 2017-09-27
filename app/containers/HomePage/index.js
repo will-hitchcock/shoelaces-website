@@ -31,14 +31,16 @@ export default class HomePage extends PureComponent { // eslint-disable-line rea
           </Header>
         </Col>
         <Row justifyContent="center">
-          <Button path="docs">
-            <FormattedMessage {...messages.docs} />
-          </Button>
           <Button external path="https://github.com/will-hitchcock/shoelaces">
-            <FormattedMessage {...messages.github} />
+            <FormattedMessage {...messages.shoelaces} />
+          </Button>
+          <Button external path="https://github.com/will-hitchcock/react-shoelaces">
+            <FormattedMessage {...messages.reactShoelaces} />
           </Button>
         </Row>
-        {examples.map(item => <CodeExample key={item.name} scope={item.scope} code={item.code} />)}
+        {examples.map(({ name, ...item }) =>
+          <CodeExample key={name} {...item} />
+        )}
       </Container>
     )
   }
