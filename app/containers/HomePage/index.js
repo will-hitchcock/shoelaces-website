@@ -14,7 +14,8 @@ import { FormattedMessage } from 'react-intl'
 import { Container, Row, Col } from 'react-shoelaces'
 import Button from 'components/Button'
 import Header from 'components/Header'
-import BasicExample from 'components/BasicExample'
+import CodeExample from 'components/CodeExample'
+import examples from 'components/CodeExample/examples'
 import messages from './messages'
 
 export default class HomePage extends PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -25,19 +26,21 @@ export default class HomePage extends PureComponent { // eslint-disable-line rea
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
-          <Header type="h3">
+          <Header type="h2">
             <FormattedMessage {...messages.subHeader} />
           </Header>
         </Col>
         <Row justifyContent="center">
-          <Button path="docs">
-            <FormattedMessage {...messages.docs} />
-          </Button>
           <Button external path="https://github.com/will-hitchcock/shoelaces">
-            <FormattedMessage {...messages.github} />
+            <FormattedMessage {...messages.shoelaces} />
+          </Button>
+          <Button external path="https://github.com/will-hitchcock/react-shoelaces">
+            <FormattedMessage {...messages.reactShoelaces} />
           </Button>
         </Row>
-        <BasicExample />
+        {examples.map(({ name, ...item }) =>
+          <CodeExample key={name} {...item} />
+        )}
       </Container>
     )
   }

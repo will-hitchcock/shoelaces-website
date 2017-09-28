@@ -11,15 +11,19 @@ export default defineMessages({
     defaultMessage: '{ 👟 } Shoelaces'
   },
   subHeader: {
-    id: 'app.components.HomePage.header',
+    id: 'app.components.HomePage.subHeader',
     defaultMessage: 'Mobile first flexible CSS-in-JS grid.'
   },
-  docs: {
-    id: 'app.components.HomePage.header',
-    defaultMessage: 'Docs'
+  subHeader2: {
+    id: 'app.components.HomePage.subHeader2',
+    defaultMessage: 'Check us out on Github { 👟 } shoelaces or < 👟 /> react-shoelaces'
   },
-  github: {
-    id: 'app.components.HomePage.header',
-    defaultMessage: 'Github'
+  shoelaces: {
+    id: 'app.components.HomePage.shoelaces',
+    defaultMessage: 'shoelaces'
+  },
+  reactShoelaces: {
+    id: 'app.components.HomePage.reactShoelaces',
+    defaultMessage: 'react-shoelaces'
   }
 })
