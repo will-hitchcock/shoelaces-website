@@ -9,6 +9,8 @@ exports[`<CodeExample /> renders a <LiveProvider /> 1`] = `
       "pi": 3.141592653589793,
     }
   }>
+  <Header
+    type="h2" />
   <LivePreview />
   <styled.div
     justifyContent="center">

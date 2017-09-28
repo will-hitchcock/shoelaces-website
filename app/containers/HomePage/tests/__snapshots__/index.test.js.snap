@@ -11,10 +11,10 @@ exports[`<HomePage /> renders the <HomePage /> 1`] = `
         values={Object {}} />
     </Header>
     <Header
-      type="h3">
+      type="h2">
       <FormattedMessage
         defaultMessage="Mobile first flexible CSS-in-JS grid."
-        id="app.components.HomePage.header"
+        id="app.components.HomePage.subHeader"
         tagName="span"
         values={Object {}} />
     </Header>
@@ -22,19 +22,20 @@ exports[`<HomePage /> renders the <HomePage /> 1`] = `
   <styled.div
     justifyContent="center">
     <Button
-      path="docs">
+      external={true}
+      path="https://github.com/will-hitchcock/shoelaces">
       <FormattedMessage
-        defaultMessage="Docs"
-        id="app.components.HomePage.header"
+        defaultMessage="shoelaces"
+        id="app.components.HomePage.shoelaces"
         tagName="span"
         values={Object {}} />
     </Button>
     <Button
       external={true}
-      path="https://github.com/will-hitchcock/shoelaces">
+      path="https://github.com/will-hitchcock/react-shoelaces">
       <FormattedMessage
-        defaultMessage="Github"
-        id="app.components.HomePage.header"
+        defaultMessage="react-shoelaces"
+        id="app.components.HomePage.reactShoelaces"
         tagName="span"
         values={Object {}} />
     </Button>
@@ -71,28 +72,34 @@ exports[`<HomePage /> renders the <HomePage /> 1`] = `
     } />
   <CodeExample
     code="<Container>
+    <Header type=\"h3\">Default (between)</Header>
     <Row>
       <Col xs={1 / 3}><Box /></Col>
       <Col xs={1 / 3}><Box /></Col>
     </Row>
+    <Header type=\"h3\">Around</Header>
     <Row justifyContent=\"around\">
       <Col xs={1 / 3}><Box /></Col>
       <Col xs={1 / 3}><Box /></Col>
     </Row>
+    <Header type=\"h3\">Center</Header>
     <Row justifyContent=\"center\">
       <Col xs={1 / 3}><Box /></Col>
       <Col xs={1 / 3}><Box /></Col>
     </Row>
+    <Header type=\"h3\">Start</Header>
     <Row justifyContent=\"start\">
       <Col xs={1 / 3}><Box /></Col>
       <Col xs={1 / 3}><Box /></Col>
     </Row>
+    <Header type=\"h3\">End</Header>
     <Row justifyContent=\"end\">
       <Col xs={1 / 3}><Box /></Col>
       <Col xs={1 / 3}><Box /></Col>
     </Row>
   </Container>
     "
+    header="Justification"
     key="justify"
     scope={
       Object {
@@ -100,6 +107,7 @@ exports[`<HomePage /> renders the <HomePage /> 1`] = `
         "Col": [Function],
         "Container": [Function],
         "Flex": [Function],
+        "Header": [Function],
         "Row": [Function],
       }
     } />
@@ -125,6 +133,7 @@ exports[`<HomePage /> renders the <HomePage /> 1`] = `
     </Row>
   </Container>
     "
+    header="Nesting"
     key="nesting"
     scope={
       Object {
@@ -150,6 +159,7 @@ exports[`<HomePage /> renders the <HomePage /> 1`] = `
     </Row>
   </Container>
     "
+    header="Responsive"
     key="responsive"
     scope={
       Object {
@@ -176,6 +186,7 @@ exports[`<HomePage /> renders the <HomePage /> 1`] = `
     </Row>
   </Container>
   "
+    header="Fancy pants math"
     key="math"
     scope={
       Object {

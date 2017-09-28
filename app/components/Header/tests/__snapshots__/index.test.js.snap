@@ -13,23 +13,33 @@ exports[`Header renders a <H5 /> 1`] = `<styled.h5 />`;
 exports[`Header renders css 1`] = `
 Object {
   "h1": Object {
-    "color": "white",
+    "color": "#324859",
+    "fontSize": "4.23606797749979em",
+    "margin": "0.25em 0",
     "textAlign": "center",
   },
   "h2": Object {
-    "color": "white",
+    "color": "#324859",
+    "fontSize": "2.618033988749895em",
+    "margin": "0.25em 0",
     "textAlign": "center",
   },
   "h3": Object {
-    "color": "white",
+    "color": "#324859",
+    "fontSize": "1.618033988749895em",
+    "margin": "0.25em 0",
     "textAlign": "center",
   },
   "h4": Object {
-    "color": "white",
+    "color": "#324859",
+    "fontSize": "1em",
+    "margin": "0.25em 0",
     "textAlign": "center",
   },
   "h5": Object {
-    "color": "white",
+    "color": "#324859",
+    "fontSize": "1em",
+    "margin": "0.25em 0",
     "textAlign": "center",
   },
 }
