@@ -3,7 +3,8 @@ import colors from 'utils/colors'
 const phi = (1 + Math.sqrt(5)) / 2
 const shared = {
   textAlign: 'center',
-  color: colors.primaryDark
+  color: colors.primaryDark,
+  margin: '0.25em 0'
 }
 
 const h1 = {

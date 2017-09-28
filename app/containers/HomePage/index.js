@@ -26,7 +26,7 @@ export default class HomePage extends PureComponent { // eslint-disable-line rea
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
-          <Header type="h3">
+          <Header type="h2">
             <FormattedMessage {...messages.subHeader} />
           </Header>
         </Col>

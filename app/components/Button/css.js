@@ -6,9 +6,9 @@ export const css = {
   padding: '0.5rem 0',
   margin: '0.5rem 1rem',
   width: '11rem',
-  background: colors.secondary,
+  background: colors.primary,
   color: 'white',
-  border: `2px solid ${colors.secondaryLighter}`,
+  border: `2px solid ${colors.primaryLighter}`,
   textAlign: 'center',
   textDecoration: 'none'
 }
